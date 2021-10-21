@@ -1,0 +1,280 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    background: url("background/thumb5.webp") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+/***********/  
+.navbar{
+    background-color: #04989E;
+    color:white;
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:20px;
+    
+}
+.navlist{
+    list-style-type: none; 
+}
+.navlist .list-item{
+    display: inline-block;
+    padding: 20px 10px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: black;
+}
+.menu{
+    display: none;
+}
+.menu-line{
+    width:20px;
+    height:3px;
+    background-color: black;
+    margin-bottom: 3px;
+}
+.box{
+    background-color: #04989E;
+    max-width: 800px;
+    height:500px;
+    border:1px solid black;
+    border-radius: 8px ;
+    display: grid; 
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: repeat(2,1fr);
+}
+.image{
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    border: black 1px solid;
+}
+.carac{
+    height: 300px;
+    width: 100%;
+    grid-column: 2/-1;
+    display: inherit;
+    grid-template-rows: repeat(auto-fit,minmax(25px,1fr));
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    border-bottom: black dotted 1px;
+}
+.icone{
+    max-width: 40px;
+    max-height: 40px;
+}
+.spanicone{
+ justify-self: center;
+}
+.petitContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding-left: 10px;
+    border-left: solid 1px black
+}
+span.titles{
+    font-weight: 900;
+    border-bottom: black 1px dotted;
+}
+.txt{
+    grid-column: 1 / span 2 ;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-nom-plante{
+    background-color: blanchedalmond;
+    width :20% ;
+    height: 20%;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transform : translateY(-50%)
+}
+.nom-plante{
+    align-self: center;
+    font-size: 140%;
+}
+span.description{
+    width: 90%;
+    line-height: 1.8
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 
+    [start]
+    repeat(8, minmax(min-content, 20rem))
+    [end];
+    
+
+}
+
+ .grille {
+    grid-column: start / end;
+    margin: 12rem 0 12rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 5rem;
+    justify-items: center;
+} 
+.container-presentation{
+    display: grid;
+    grid-template-columns: 
+    [start]
+    repeat(8, minmax(min-content, 20rem))
+    [end];
+    
+}
+.grille-presentation{
+    grid-column: start / end;
+    margin: 12rem 0 12rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 5rem;
+    justify-items: center;  
+}
+.box--photo{
+    width: 300px ;
+    height:350px;
+    background-color: lightgreen;
+    justify-self: center;
+    border-radius: 8px;
+}
+.box--large{
+    width: 450px;
+    text-align: center;
+    line-height: 50px;
+    font-size:140%;
+}
+
+.malist{
+    list-style: none;
+    
+}
+
+.section{
+    height: 30vh;
+    width: 80vw;
+    background-color: beige;
+    grid-column: 1/-1;
+    line-height: 1.8;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 5px solid black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    
+
+
+}
+@media all  and (max-width:1280px) {
+    .grille{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media all and (max-width:700px){
+    .menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top:15px;
+    }
+    .navbar{
+        flex-direction: column;
+        position: relative;
+    }
+    .logo{
+        height: 30px;
+    }
+    .icone-container{
+        width:100%;
+    }
+    .navlist{
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+    .logo{
+        margin-top:10px;
+        margin-left:10px;
+    }
+    .navlist .list-item{
+        display: block;
+        border-top: 1px solid black;
+        
+    }
+    .active {
+        display: block;
+        
+    }
+
+}
+footer{
+    width:100vw ;
+    height:100px;
+    background-color: #04989E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+}
+
+/*
+*** type ****
+semi-persistante : <img src="https://img.icons8.com/nolan/64/flower.png"/>
+persistante : <img src="https://img.icons8.com/plasticine/100/000000/flower.png"/>
+caduc : <img src="https://img.icons8.com/carbon-copy/100/000000/flower.png"/>
+
+***code Sécheresse***
+ key : <img src="https://img.icons8.com/bubbles/50/000000/key.png"/>
+
+ *** exposition****
+ soleil :  <img src="https://img.icons8.com/office/16/000000/sun--v1.png"/>
+ mi-ombre: <img src="https://img.icons8.com/color/48/000000/clouds.png"/>
+ ombre:    <img src="https://img.icons8.com/clouds/100/000000/clouds.png"/>
+
+****resistance au  froid ***** 
+<img src="https://img.icons8.com/external-konkapp-outline-color-konkapp/64/000000/external-muscle-gym-konkapp-outline-color-konkapp.png"/>
+
+****sol*****
+tolère le calcaire  : <img src="https://img.icons8.com/office/16/000000/rock.png"/>
+acide :<img src="https://img.icons8.com/ios-filled/50/000000/acid-flask.png"/>
+indifférent : <img src="https://img.icons8.com/ios-filled/50/000000/all-out.png"/>
+
+*****croissance****
+rapide : <img src="https://img.icons8.com/ios/50/000000/speed.png"/>
+mayenne: <img src="https://img.icons8.com/carbon-copy/100/000000/speed.png"/>
+lente:   <img src="https://img.icons8.com/ios/50/000000/slow-download.png"/>
+
+*****hauteur*****
+hauteur : <img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-growth-finance-kiranshastry-lineal-color-kiranshastry-4.png"/>
+
+*/
+

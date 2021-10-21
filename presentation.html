@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="botanique.css">
+    <title>Botanique Urbaine - presentation</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="icone-container">
+            <a href="#"><img class="logo" src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-tree-farming-and-gardening-justicon-lineal-color-justicon.png"/></a>
+        </div>
+        <ul class="navlist">
+            <li class="list-item">
+                <a href="accueil.html"> Acceuil</a>
+            </li>
+            <li class="list-item">
+               <a href="presentation.html">Presentation</a> 
+            </li>
+            <li class="list-item">
+                <a href="/arbuste.html">Arbustes</a> 
+            </li>
+            <li class="list-item">
+                <a href="/fleurs.html">Fleurs</a> 
+            </li>
+            <li class="list-item">
+               <a href="/legumes.html">Legumes</a> 
+            </li>
+            <li class="list-item">
+              <a href="/plantes.html">Plantes</a>  
+            </li>
+        </ul>
+        <div class="menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+           
+        </div>
+    </nav>
+</header>
+<div class="container-presentation">
+    <div class="grille-presentation">
+        
+        <div class="box--photo tarik">
+            <img style="object-fit: cover;width:100%; height: 100%; border-radius: 8px;" src="./img-presentation/tarik.webp" alt="tarik gadoumi" >
+        </div>
+        <div class="box--photo">
+            <img style="  object-fit: cover;width:100%; height: 100%; border-radius: 8px;" src="./img-presentation/amarilys.webp" alt="amarilys" >
+        </div>
+        <div class="box--photo box--large">Bonjour ! je  m'appel  Tarik j ai 23 ans , je suis passionnéedes sciences et  de  la technologie </div>
+        <div class="box--photo box--large">Bonjour! Je suis Amarilys j'ai 21 ans, j'habite Marseille depuis mes 16 ans.
+            Je suis passionnée de cinéma et de photographie,
+            
+            </div>
+        
+       
+    
+    </div>
+</div> 
+
+  
+    <footer>
+        Made with <span>❤️</span> By Amarilys & Tarik ©️ 2021
+    </footer>
+    <script>
+        const toggleButton = document.querySelector('.menu') ;
+        const navList  = document.querySelector('.navlist');
+        toggleButton.addEventListener('click',
+        ()=> navList.classList.toggle('active')
+        )
+    </script>
+</body>
+</html>
+
+    
+    
